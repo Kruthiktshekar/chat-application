@@ -1,0 +1,150 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(0,0,255,0.9), rgb(128,0,128,0.9));
+}
+.login-div .login-container{
+    border: 2px solid rgb(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px ;
+    width: 30%;
+    height: 50%;
+    border-radius: 30px;
+    box-shadow: -8px 10px rgb(0,0,0,0.1);
+    background-color: white;
+}
+
+.login-container h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.9;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-container input{
+    margin-bottom: 40px;
+    height: 45px;
+    padding: 2px 5px;
+    border: none;
+    border-bottom: 2px solid rgb(0,0,0,0.6);
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    outline: none;
+}
+.login-container input:focus{
+    border: none;
+    border-bottom:2px solid blue;
+    outline: none;
+    color: blue;
+}
+
+.login-container button{
+    width: 70%;
+    height:40px ;
+    margin-left: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(255,255,255,0.5);
+    background-color: #0343da;
+    color: white;
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.content{
+    margin-top: 14px!important;
+    
+}
+.content span{
+    font-size: 17px!important;
+}
+.content .link{
+    text-decoration: none!important;
+    font-size: 18px!important;
+}
+
+@media only screen and (max-width: 800px){
+    .login-div .login-container{
+        width: 400px;
+    }
+}
+
+
+.login-div .sign-container{
+    border: 2px solid rgb(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px ;
+    width: 35%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: -8px 10px rgb(0,0,0,0.1);
+    background-color: white;
+}
+
+.sign-container h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 600;
+    opacity: 0.9;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sign-container input{
+    margin-bottom: 40px;
+    height: 45px;
+    padding: 2px 5px;
+    border: none;
+    border-bottom: 2px solid rgb(0,0,0,0.6);
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    outline: none;
+}
+.sign-container input:focus{
+    border: none;
+    border-bottom:2px solid blue;
+    outline: none;
+    color: blue;
+}
+
+.sign-container button{
+    width: 70%;
+    height:50px ;
+    margin-left: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(255,255,255,0.5);
+    background-color: #0343da;
+    color: white;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.content{
+    margin-top: 14px;
+    text-align: center;
+    
+}
+.content span{
+    font-size: 17px;
+}
+.content .link{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 800px){
+    .login-div .sign-container{
+        width: 400px;
+    }
+}

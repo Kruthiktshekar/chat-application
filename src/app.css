@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+.chat-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.contact-container{
+   background-color: #0c003bfc;
+   width: 30%;
+   position: relative;
+}
+.message-container{
+    display: block;
+    background-color: rgb(11, 0, 38);
+    width: 70%;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.current-user{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #220038ae;
+    margin-top:5rem ;
+}
+.current-user .avatar{
+    border-radius: 50%;
+    width: 50px!important;
+    height:50px!important;
+    font-size: 30px!important;
+    background-color: rgba(255, 0, 212, 0.41)!important;
+}
+.current-user .name{
+    margin-left: 5px;
+    color: #a3a4c5fe;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+}
+.current-user h2{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+.current-user p{
+    text-transform: capitalize;
+    color: #a3a4c5fe;
+    font-size: 14px;
+    opacity: 0.7;
+
+}
+
+
+.contact-user{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 10px ;
+    margin-left: 2px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: rgb(0, 43, 107);
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.contact-user .avatar{
+    border-radius: 50%;
+    width: 50px!important;
+    height:50px!important;
+    font-size: 30px!important;
+    background-color: rgba(200, 7, 168, 0.56)!important;
+}
+.contact-user .name{
+    margin-left: 5px;
+    color: #a3a4c5fe;
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+}
+.contact-user .click{
+    display: flex;
+    cursor: pointer;
+}
+.contact-user h2{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-user p{
+    text-transform: capitalize;
+    font-size: 14px;
+    opacity: 0.7;
+}
+.chat-main{
+    position: relative;
+    
+}
+.contacts{
+    background-color: darkgreen;
+    padding: 1rem;
+}
+.contact{
+    background-color: darkolivegreen;
+    padding: 1rem;
+}
+.welcome{
+    overflow: hidden;
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    color: #a3a4c5fe;
+    padding-left: 15rem;
+    padding-top: 25rem;
+}
+.chat-div{
+    display: flex;
+    align-items: baseline;
+    background-color: rgb(185, 19, 204);
+    height: 100vh;
+    width: 100vw;
+}
+
+.chat-input input{
+    position: fixed;
+    bottom: 0;
+    padding: 0.5rem;
+    width: 55vw;
+    border-radius: 10px;
+    background-color: rgba(11, 0, 45, 0.885);
+    color: #a3a4c5fe;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.chat-input button{
+    position: fixed;
+    right: 5rem;
+    bottom: 0;
+    padding: 0.6rem;
+    border-radius: 10px;
+    background-color: rgba(47, 3, 150, 0.885);
+    color: #a3a4c5fe;
+
+    
+}
+.log-out{
+    position: fixed;
+    top : 5px;
+    right: 20px;
+}
+.log-out button{
+    color: rgb(210, 220, 220);
+    background-color: rgb(75, 19, 136);
+    font-size: 18px;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.chat-message{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+}
+.message{
+    display:flex;
+    align-items: center;
+}
+
+.sended{
+    float: right;
+    background-color: rgba(24, 0, 96, 0.689);
+    border-radius: 25px;
+    border-bottom-right-radius:0px ;
+    flex-wrap: wrap;
+    overflow: auto;
+    word-break: break-word;
+    width: 150px;
+    height: auto;
+    padding: 8px 15px;
+  
+
+}
+.recived{
+    float: left;
+    background-color: rgba(24, 0, 96, 0.689);
+    word-break:break-word;
+    border-radius: 25px;
+    border-top-left-radius:0px ;
+    flex-wrap: wrap;
+    width:150px;
+    height: auto;
+    padding: 8px 15px;
+
+}
+.msg-content{
+    display: flex;
+    font-size:25px;
+    color: rgb(169, 159, 180);
+    
+}
+.header{
+    background-color: rgba(42, 0, 110, 0.657);
+    padding: 1rem;
+    color: #a3a4c5fe;
+    border-radius: 5px;
+}
